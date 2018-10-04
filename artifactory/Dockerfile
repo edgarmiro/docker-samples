@@ -9,7 +9,9 @@ RUN set -ex \
     	wget \
     	unzip \
     && wget ${URL} \
-    && unzip ${FILE}
+    && unzip ${FILE} \
+    && cd bin \
+  	&& sed -ri 's/2g/512m/g' artifactory.default
 
 EXPOSE 8081
 

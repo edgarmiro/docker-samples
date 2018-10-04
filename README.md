@@ -1,3 +1,4 @@
 # docker-samples
 
 - Java
+- Artifactory

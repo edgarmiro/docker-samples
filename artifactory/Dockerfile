@@ -10,6 +10,7 @@ RUN set -ex \
     	unzip \
     && wget ${URL} \
     && unzip ${FILE} \
+    && cd ${VERSION} \
     && cd bin \
   	&& sed -ri 's/2g/512m/g' artifactory.default
 
